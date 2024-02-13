@@ -1,21 +1,24 @@
 import pymysql
 
-conn = pymysql.connect(
-    host='localhost',
-    user='myuser',
-    password='mypassword',
-    database='mydatabase'
-)
-# Установка соединения с базой данных
-
-cursor = conn.cursor()
-# Создание курсора
-
-cursor.execute("SELECT * FROM mytable")
-# Выполнение SQL-запроса
-
-results = cursor.fetchall()
-# Получение результатов
-
-conn.close()
-# Закрытие соединения
+try:
+    connection = pymysql.connect(
+        host='localhost',
+        port=3306,
+        user='myuser',
+        password='mypassword',
+        database='mydatabase',
+        cursorclass=pymysql.cursor.DictCursor
+    )
+    print('Sucessfuly connection...')
+    print("#" * 20)
+    try:
+        with connection.cursor() as cursor:
+            create_table_query = "CREATE TEABLE `users`(id int AUTO_INCREMENT, " \
+                                 "name varchar(32), " \
+                                 "password varchar(32), " \
+                                 "email varchar(32)"; \
+    finally:
+        connection.close()
+except Exception as ex:
+    print('Connection failed...')
+    print(ex)
