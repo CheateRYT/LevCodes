@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-family: "mainFont", sans-serif !important;
 }
@@ -56,6 +57,7 @@ body {
   font-size: 19px;
   border: 0cap;
   padding-top: 21px;
+  background-color: #45cea2;
   padding-bottom: 21px;
   max-width: 250px;
 }
