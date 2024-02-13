@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "mainFont";
+  src: url("./fonts/MailSansRoman-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "mainFont", sans-serif !important; /* Замените 'CustomFont' на имя вашего шрифта */
+}
+.navbar {
+  background-color: aquamarine;
+  max-height: 80px;
+}
+.navbar-brand {
+  color: white;
+}
+.nav-link {
+  color: white;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.btn-login {
+  color: white;
+  font-size: 20px;
+}
+.navbar__title {
+  font-size: 30px;
+}
+@media (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-item {
+    margin-bottom: 10px;
+  }
+}
