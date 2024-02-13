@@ -5,6 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 body {
   font-family: "mainFont", sans-serif !important;
 }
@@ -56,6 +57,7 @@ body {
   font-size: 19px;
   border: 0cap;
   padding-top: 21px;
+  background-color: #45cea2;
   padding-bottom: 21px;
   max-width: 250px;
 }
@@ -66,6 +68,30 @@ body {
   color: black;
   font-size: 19px;
   padding-bottom: 250px;
+}
+.advantages {
+  padding-top: 100px;
+  background-image: url(./img/second-background.jpg);
+}
+.advantages-row {
+  padding-left: 100px;
+}
+.advantages-block {
+  margin-bottom: 30px;
+}
+.advantages-block__logo {
+  height: 35px;
+}
+.advantages__title {
+  margin-bottom: 70px;
+  margin-right: 5px;
+  height: 35px;
+}
+.advantages-block__title {
+  padding-right: 100px;
+}
+.advantages-block__text {
+  margin-left: 55px;
 }
 @media (max-width: 576px) {
   .navbar-nav {
@@ -79,5 +105,10 @@ body {
   }
   .nav-item {
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .advantages-block__text {
+    margin-left: 0px;
   }
 }
