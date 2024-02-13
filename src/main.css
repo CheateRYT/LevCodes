@@ -6,7 +6,7 @@
   font-style: normal;
 }
 body {
-  font-family: "mainFont", sans-serif !important; /* Замените 'CustomFont' на имя вашего шрифта */
+  font-family: "mainFont", sans-serif !important;
 }
 
 .navbar {
@@ -36,7 +36,37 @@ body {
   font-size: 30px;
   color: black !important;
 }
-
+.big-image {
+  background-size: 1949px 848px;
+}
+.main-block__title {
+  padding-bottom: 20px;
+  font-size: 50px;
+  padding-top: 100px;
+}
+.main-block__text {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.main-block__authorization {
+  flex-direction: column;
+  row-gap: 30px;
+}
+.main-block__login {
+  font-size: 19px;
+  border: 0cap;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  max-width: 250px;
+}
+.main-block__register {
+  max-width: 56px;
+  padding-left: 60px;
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+  padding-bottom: 250px;
+}
 @media (max-width: 576px) {
   .navbar-nav {
     -webkit-box-orient: vertical;
