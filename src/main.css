@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "mainFont";
-  src: url("MailSansRoman-Regular.ttf") format("truetype");
+  src: url("./fonts/MailSansRoman-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,38 +10,42 @@ body {
 }
 
 .navbar {
-  background-color: aquamarine;
+  background-color: #45cea2;
   max-height: 80px;
 }
 
 .navbar-brand {
-  color: white;
+  color: black !important;
 }
 
 .nav-link {
-  color: white;
+  color: black !important;
   margin-right: 20px;
   font-size: 20px;
 }
-
+.navbar-logo {
+  margin-right: 5px;
+  height: 35px;
+}
 .btn-login {
-  color: white;
+  color: black !important;
   font-size: 20px;
 }
 
 .navbar__title {
   font-size: 30px;
+  color: black !important;
 }
 
 @media (max-width: 576px) {
   .navbar-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   .nav-item {
     margin-bottom: 10px;
